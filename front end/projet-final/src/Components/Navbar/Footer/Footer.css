@@ -1,0 +1,36 @@
+.footer {
+  background-color: aliceblue;
+
+  border-radius: 10px;
+  background-color: rgba(54, 54, 54, 0.767);
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: none;
+  position: relative;
+}
+
+.footer-col {
+  background-color: rgb(61, 61, 61);
+  font-size: 30px;
+  margin: 10px;
+}
+.inputnews {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.btnnews {
+  border-radius: 5px;
+  background-color: rgb(45, 45, 253);
+  padding: 5px;
+  cursor: pointer;
+}
+.text-center p-3 {
+  color: white;
+  text-decoration-color: white;
+}
