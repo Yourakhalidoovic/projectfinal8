@@ -1,0 +1,20 @@
+.carta {
+  margin: 100px;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+}
+.paragraphe {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+}
+.image {
+  border-radius: 10px;
+  position: center;
+}

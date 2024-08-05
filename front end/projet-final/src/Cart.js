@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "react-use-cart";
+import { useEffect } from "react";
 
 export default function Cart() {
   const {
@@ -13,6 +14,13 @@ export default function Cart() {
     emptyCart,
   } = useCart();
   if (isEmpty) return <h1 className="text-center">Your Cart is Empty</h1>;
+  useEffect(() => {
+    // Fetch cart items from the backend
+    fetch("http://localhost:5000/api/cart")
+      .then((response) => response.json())
+      .then((items) => setCartItems(items))
+      .catch((error) => console.error("Error fetching cart items:", error));
+  }, []);
   return (
     <section className="py-4 container">
       <div className="row justify-content-center">
